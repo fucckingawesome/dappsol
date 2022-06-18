@@ -1,0 +1,229 @@
+html{
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+body{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-size: var(--font-size);
+    line-height: var(--line-height);
+    color: var(--text);
+    font-family: var(--primary-font);
+    letter-spacing: var(--letter-spacing);
+
+
+    &.admin-bar{
+        top: 32px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: var(--heading);
+    font-weight: 600;
+    clear: both;
+    margin: 1em 0 0.5em 0px;
+
+}
+
+
+h1{
+	font-size: 2em;
+    line-height: 1.21;
+    
+    
+}
+
+h2{
+	font-size: 1.7411em;
+     line-height: 1.21;
+   
+    
+}
+
+h3{
+	
+	font-size: 1.5157em;
+    
+   
+    
+}
+
+h4{
+	font-size: 1.3195em;
+    
+   
+    
+}
+
+h5{
+	font-size: 1.1487em;
+    
+    
+    
+}
+
+h6{
+	font-size: 1em;
+    
+    
+    
+}
+
+a{
+    text-decoration: none;
+    &:hover,
+    &:focus{
+        text-decoration: none; 
+        outline: none;
+    }
+}
+
+p{
+    line-height: var(--line-height);
+    margin: 0 0 2em;
+
+    &:empty{
+        height: 0;
+        margin: 0;
+    }
+    
+}
+
+.elementor-text-editor p{
+    line-height: inherit;
+    margin: 0;
+}
+
+
+button, 
+input, 
+select, 
+textarea{
+    color: var(--text);  
+    line-height: 23px;
+
+    &:focus{ 
+        outline: none; 
+    }
+}
+
+
+blockquote {
+    position: relative;
+    font-weight: 600;
+    color: var(--heading);
+    padding: 20px 60px 20px;
+    font-size: 1.2em;
+    font-style: italic;
+     &:before{
+        position: absolute;
+        left: 10px;
+        top: 25px;
+        content: "\f17f";
+        font-family: "ovaicon";
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        vertical-align: middle;
+        font-size: 30px;
+        color: var(--primary);
+     }
+
+    &.left{
+        margin-right: 20px;
+        text-align: right;
+        margin-left: 0;
+        width: 33%;
+        float: left;    
+    }
+    
+    &.right {
+        margin-left: 20px;
+        text-align: left;
+        margin-right: 0;
+        width: 33%;
+        float: right;
+    }
+}
+
+ul {
+
+    padding: 0 0 0 15px;    
+    list-style-type: square;
+
+    li { 
+        display: list-item; 
+        text-align: -webkit-match-parent;
+    }
+}
+
+
+ol{
+    display: block;
+    padding: 0 0 0 15px;
+    list-style-type: decimal;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 20px; 
+    margin-top: 0;
+}
+
+address {
+    font-style: italic;
+    margin: 0 0 24px;
+}
+
+cite, 
+em, 
+var, 
+address, 
+dfn {
+    font-style: italic;
+}
+
+pre{
+    border: 1px solid #d1d1d1;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.3125;
+    margin: 1.75em 0  1.75em 0;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1.75em;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    
+}
+
+hr {
+    background-color: #ccc;
+    border: 0;
+    height: 1px;
+    margin: 0 0 1em;
+}
+
+
+
+
+.elementor-widget-text-editor p{
+    line-height: inherit;
+}

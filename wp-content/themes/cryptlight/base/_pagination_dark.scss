@@ -1,0 +1,62 @@
+.site_dark{
+    /**
+     * Pagination For Blog and WooCommerce
+     */
+    .woocommerce,
+    nav{
+        
+        &.woocommerce-pagination ul.page-numbers,
+        .page-numbers{
+
+            li{
+               
+                .page-numbers{
+                    border-color: #f1f1f1;
+                    background: #f1f1f1;
+                    color: var(--text);
+                    
+                    &:hover,
+                    &:focus,
+                    &.current{
+                        background-color: var(--primary);
+                        color: #fff;
+
+                    }
+                }
+                
+            }
+        }    
+    }
+
+
+
+    /**
+     * Page Link
+     */
+    .page-links {
+        .post-page-numbers{
+            background-color: transparent;
+            border-color: var(--primary);
+            color: var(--text);
+
+            &:hover,
+            &:focus,
+            &.current{
+                background-color: var(--primary);
+                border-color: var(--primary);
+                color: #fff;
+                
+            }
+
+        }
+        
+       
+        & > .page-links-title {
+          
+            color: #fff;
+          
+        }
+        
+    }
+
+}

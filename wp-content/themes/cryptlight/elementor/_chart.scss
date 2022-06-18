@@ -1,0 +1,30 @@
+.ova-chart {
+	display: flex;
+	align-content: center;
+	justify-content: flex-start;
+	.chart-content {
+		width: 371px;
+
+		@media screen and (max-width: 400px) {
+			width: 300px;
+		}
+
+		@media screen and (max-width: 320px) {
+			width: 270px;
+		}
+	}
+}
+
+.ova-tabs {
+	.elementor-widget-tabs {
+		.elementor-tab-content {
+			padding: 0;
+		}
+		.elementor-tab-desktop-title {
+			position: relative;
+			padding-left: 0;
+			padding-right: 26px;
+			padding-bottom: 33px;
+		}
+	}
+}

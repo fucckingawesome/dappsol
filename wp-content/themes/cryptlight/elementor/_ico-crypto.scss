@@ -1,0 +1,63 @@
+.ova-ico-crypto {
+
+    margin-left: 24px;
+    
+    .item {
+        text-align: left;
+        position: relative;
+        padding-bottom: 60px;
+
+        &:before {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 0;
+            left: 0;
+            bottom: 0;
+            border-left: 2px dashed #3772ff;
+        }
+        &.item-line:before{
+            content: none;
+        }
+        &:last-child{
+            &:before{
+                content: none;
+            }
+        }
+
+        i {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            font-size: 24px;
+            color: #ffff;
+            background-color: #3772ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0px;
+            left: -24px;
+           
+        }
+
+        .title {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            color: #fff;
+            margin-bottom: 15px;
+            padding-left: 50px;
+            padding-top: 10px;
+        }
+        .desc {
+            padding-left: 50px;
+    		font-weight: 500;
+			font-size: 14px;
+			line-height: 21px;
+			color: #DCD4E0;
+
+        }
+
+    }
+}

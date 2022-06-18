@@ -1,0 +1,127 @@
+/**
+ * Pagination For Blog and WooCommerce
+ */
+.woocommerce,
+nav{
+
+    &.woocommerce-pagination,
+    &.pagination{
+        margin: 60px 0px;    
+    }
+    
+    &.woocommerce-pagination ul.page-numbers,
+    .page-numbers{
+        display: inline-block;
+        list-style-type: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        border: none;
+        clear: both;
+        white-space: inherit;
+
+        li{
+            display: inline-block;
+            margin: 0px 2px 10px 2px;
+            border: none;
+            padding: 0;
+            float: none;
+
+            .page-numbers{
+                border: 1px solid;
+                border-color: #f1f1f1;
+                border-radius: 4px;
+                background: #f1f1f1;
+                padding: 2px 10px 0px 10px;
+                min-width: 45px;
+                text-align: center;
+                font-weight: 600;
+                color: var(--text);
+                line-height: 40px;
+                font-size: 1.2em;
+                text-shadow: none;
+                @include transaction ( all, 0.3s, linear );
+                
+                i{
+                    font-size: 0.7em;
+                    line-height: 1;
+                    &:before{
+                        font-weight: bold!important;
+                    }
+                }
+
+                &:hover,
+                &:focus,
+                &.current{
+                    background-color: var(--primary);
+                    color: #fff;
+
+                }
+            }
+            
+        }
+    }    
+}
+
+
+
+/**
+ * Page Link
+ */
+.page-links {
+    clear: both;
+    margin: 20px 0px 30px 0px;
+    float: left;
+
+    .post-page-numbers{
+
+        border: 1px solid;
+        border-radius: 2px;
+        display: inline-block;
+        
+        font-size: 1rem;
+        height: 1.8461538462em;
+        line-height: 1.6923076923em;
+        margin-right: 0.3076923077em;
+        text-align: center;
+        width: 1.8461538462em;
+        font-weight: 600;
+
+        background-color: transparent;
+        border-color: var(--primary);
+        color: var(--text);
+
+        &:hover,
+        &:focus,
+        &.current{
+            background-color: var(--primary);
+            border-color: var(--primary);
+            color: #fff;
+            
+        }
+
+    }
+    
+   
+    & > .page-links-title {
+        border: 0;
+        color: #1a1a1a;
+        height: auto;
+        margin: 0;
+        padding-right: 0.6153846154em;
+        width: auto;
+    }
+    .screen-reader-text {
+        clip: rect(1px,1px,1px,1px);
+        height: 1px;
+        overflow: hidden;
+        position: absolute!important;
+        width: 1px;
+        word-wrap: normal!important;
+    }
+}
+
+.screen-reader-text{
+    display: none;
+}

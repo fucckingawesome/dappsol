@@ -1,0 +1,46 @@
+.ova-text-box {
+	display: inline-block;
+
+	.ova-box-container {
+		display: flex;
+
+		.ova-box {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-right: 16px;
+
+			.dot {
+				width: 22px;
+				height: 22px;
+				border-radius: 50%;
+				background-color: var(--primary);
+				-webkit-transition: all .3s ease;
+				-moz-transition: all .3s ease;
+				-o-transition: all .3s ease;
+				transition: all .3s ease;
+			}
+		}
+
+		.ova-box-content {
+			text-align: left;
+
+			.title {
+				margin: 0;
+				margin-bottom: 2px;
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 27px;
+				color: var(--heading);
+			}
+
+			.description {
+				margin: 0;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 24px;
+				color: var(--text);
+			}
+		}
+	}
+}

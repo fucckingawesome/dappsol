@@ -1,0 +1,41 @@
+.brand_el{
+
+	.logo_desktop{
+		display: block;
+		@media( max-width: $desktop - 1 ){
+			display: none;
+		}
+	}
+
+	.logo_mobile{
+		display: none;
+		@media( max-width: $desktop - 1 ){
+			display: block;
+		}
+	}
+
+	.logo_sticky{
+		display: none;
+	}
+	
+}
+
+.header_sticky{
+	&.active_sticky{
+		.brand_el{
+			.logo_desktop,
+			.logo_mobile{
+				display: none;
+			}
+			.logo_sticky{
+				display: block;
+			}
+		}	
+	}
+}
+
+.site-brand{
+	img{
+		height:40px;
+	}
+}

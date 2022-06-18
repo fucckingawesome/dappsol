@@ -1,0 +1,8 @@
+// Transaction
+@mixin transaction( $propertty, $duration, $timing ){
+	transition: $propertty $duration $timing;
+    -moz-transition: $propertty $duration $timing;
+    -webkit-transition: $propertty $duration $timing;
+    -o-transition: $propertty $duration $timing;
+}
+

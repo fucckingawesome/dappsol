@@ -1,0 +1,105 @@
+.ova-heading-content {
+	position: relative;
+}
+
+.ova-heading {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0;
+	padding: 0;
+	color: var(--heading);
+	position: relative;
+	text-align: left;
+
+	&.ova_top:before {
+	    content: "";
+	    position: absolute;
+	    left: 0;
+	    top: -10px;
+	    width: 106px;
+	    height: 4px;
+	    background-color: var(--heading);
+	}
+
+	&.ova_botton:before {
+		content: "";
+	    position: absolute;
+	    left: 0;
+	    bottom: -10px;
+	    width: 106px;
+	    height: 4px;
+	    background-color: var(--heading);
+	}
+
+	.ova_before {
+		display: inline-block;
+	    width: 73px;
+	    height: 2px;
+	    background-color: var(--heading);
+	    margin-right: 6px;
+	}
+
+	.ova_after {
+		display: inline-block;
+	    width: 73px;
+	    height: 2px;
+	    background-color: var(--heading);
+	    margin-left: 6px;
+	}
+
+	.ova_both_before, .ova_both_after {
+		display: inline-block;
+	    width: 33px;
+	    height: 3px;
+	    background-color: var(--heading);
+	    vertical-align: middle;
+	    background: #91A4FF;
+		border-radius: 2px;
+	}
+
+	.ova_both_before {
+		margin-right: 6px;
+	}
+
+	.ova_both_after {
+		margin-left: 6px;
+	}
+
+	a {
+		color: var(--heading);
+		-webkit-transition: all .3s ease;
+		-moz-transition: all .3s ease;
+		transition: all .3s ease;
+
+		&:hover {
+			color: var(--primary);
+		}
+	}
+
+	&.heading-linear-gradient {
+		background: linear-gradient(95.51deg, #26BAED -6.54%, #4F94FB 15.87%, #DB26F9 106.69%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+.ova-heading-description {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: #6D747C;
+	margin: 36px 0 0 0;
+}
+
+.ova-heading-bg-title {
+    position: absolute;
+    font-weight: bold;
+	font-size: 96px;
+	line-height: 144px;
+	top: -45px;
+	left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,210 @@
+.site_dark{
+
+	.sidebar .widget {
+	
+	    border-bottom: 1px solid #555;
+
+	    a{
+			color: var(--text-dark);
+			&:hover{
+				color: var(--primary);
+			}
+		}
+
+	    h4.widget-title{
+		    color: var(--heading-dark);
+		}
+
+
+		/* Widget Rss */
+		&.widget_rss{
+			ul li{
+			    border-bottom: 1px solid #555;
+				a.rsswidget{
+				   
+				    color: var(--heading-dark);
+				   
+				    &:hover{
+				    	color: var(--primary);
+				    }
+				}
+				
+				.rssSummary{
+				   
+				    color: var(--text-dark);
+				}
+				cite{
+					color: var(--light);	
+					
+				}
+
+			}
+		}
+
+		/* Widget Calendar */
+		&.widget_calendar{
+			width: 100%;
+
+			caption{ 
+				background: transparent;
+				color: var(--heading-dark);
+			}
+
+			table{
+				
+				thead{
+					border: 1px solid #555;
+					tr{
+						th{
+							background-color: #f1f1f1;
+							color: #333; 
+							border: 1px solid #555;
+							
+						}
+					}	
+				}
+				tbody{
+					tr{
+						td{
+							
+							border: 1px solid #555; 
+						}
+					}
+				}
+				
+			}
+			
+
+			nav{
+				
+				a{
+					color: var( --primary );
+					&:hover{
+						color: #ffffff;
+					}
+				}
+				
+			}
+		}
+
+
+		/* Widget Tag clound */
+		&.widget_tag_cloud{
+		 	.tagcloud{ 
+		 	
+		 		a{
+		 			
+			 		background-color: transparent;
+			 	
+			 		border-color:#555;
+			 		
+			 		&:hover{
+			 			color: #fff;
+			 			background-color: var(--primary);
+			 			border-color: var(--primary);
+			 		}	
+		 		}
+		 		
+		 	}
+
+		}
+
+
+		/* Widget Search */
+		&.widget_search{
+			form{
+			
+				&:before{
+					
+					color: var(--light);
+					font-family: "ovaicon";
+					
+				}
+			
+				input[type="submit"]{
+					
+					background-color: transparent;
+					
+				}	
+			}
+			
+		}
+		
+
+		
+		/**
+		 * Archives
+		 */
+
+		&.widget_categories,
+		&.widget_archive{
+			ul{
+				li{
+					
+					color: var(--light);
+					&:before{
+						
+						color: var(--text-dark);
+						
+					}
+					a{
+						color: var(--text-dark);
+						
+						&:hover{
+							color: var(--primary);
+						}
+						
+					}
+				}
+			}
+			.widget-custom{
+				ul{
+					li{
+						
+						&:before{
+							
+							font-size: 0.9em;
+						}
+						a{
+						
+
+							.number{
+								background: #eee;
+							
+							}
+						}
+					}
+				}	
+			}
+			
+		}
+
+		&.widget_recent_comments{
+			ul{
+				li{
+					color: var(--light);
+					
+					
+					.comment-author-link{
+						
+							color: var( --heading-dark );
+							
+							a{
+								&:hover{
+									color: var(--primary);
+								}	
+							}
+					}
+
+				}
+			}
+		}
+		
+		
+
+	}
+}
+
+
+
+

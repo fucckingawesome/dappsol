@@ -1,0 +1,119 @@
+button,
+input,
+select,
+textarea {
+	font-size: 100%; /* Corrects font size not being inherited in all browsers */
+	margin: 0; /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
+	*vertical-align: middle; /* Improves appearance and consistency in all browsers */
+	
+}
+
+
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='tel'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+textarea,
+.input-text {
+
+	
+	border-radius: $border-radius-small;
+	border-color: $border-field-color;
+	background-color: $background-field;
+	color: var(--text);
+	padding: 10px 10px;
+	
+	border-width: 1px;
+	border-style: solid;
+	-webkit-appearance: none;
+	box-sizing: border-box;
+	font-weight: normal;
+	outline: 0;
+	transition: all ease-in-out 0.3s;
+	font-size: 1em;
+	&::placeholder {
+		color: var(--text);
+	}
+	&:focus{
+		color: var(--heading);
+	}
+	.form-light & {
+		color: #fff;
+		&::placeholder {
+			color: #fff;
+		}
+	}
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit']{
+	border: 1px solid;
+	border-radius: $border-radius-small;
+	padding: 10px 15px;
+	font-size: 1em;
+	border-color: var(--primary);
+	background-color: var(--primary);
+	color: #fff;
+	cursor: pointer;
+	font-weight: 600;
+	
+	@include transaction( all, 0.3s, linear );
+	&:hover{
+		background-color: transparent;
+		border-color: var(--primary);
+		color: var(--primary);
+	}
+}
+
+select{
+	padding: 10px;
+	&:not([size]):not([multiple]) {
+		
+		
+		
+		background-color: $background-field;
+		color: var(--text);
+		border: 1px solid $border-field-color;
+		border-radius: $border-radius-small;
+		max-width: 100%;
+		-webkit-appearance: none;
+		-moz-appearance: textfield;
+		appearance: none;
+		width: 100%;
+		background-image: url("./assets/img/base/select_arrow.png");
+		background-position: calc(100% - 15px) center;
+		background-repeat: no-repeat;
+		
+	}
+}
+
+textarea {
+	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
+	vertical-align: top; /* Improves readability and alignment in all browsers */
+	width: 100%;
+}
+
+label {
+	font-weight: 400;
+}
+
+label.inline {
+	input {
+		width: auto;
+	}
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+	-webkit-transition: opacity 0.5s 0.5s ease;
+	-moz-transition: opacity 0.5s 0.5s ease;
+	transition: opacity 0.5s 0.5s ease;
+	opacity: 0;
+}
+
+

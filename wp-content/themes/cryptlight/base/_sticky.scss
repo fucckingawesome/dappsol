@@ -1,0 +1,21 @@
+.header_sticky {
+  &.active_sticky{
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	z-index: 9999;
+  	padding-top: 5px!important;
+    padding-bottom: 5px!important;
+    background-color: #fff;
+  	@include transaction( all, 0.3s, linear );
+
+    &.sticky_bg_blue {
+      background-color: #5270FC;
+    }
+
+    &.sticky_bk_dark {
+      background-color: #1B1E32;
+    }
+  }
+}

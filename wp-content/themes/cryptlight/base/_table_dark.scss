@@ -1,0 +1,63 @@
+.site_dark{
+	table{
+
+		
+		border: 1px solid #ededed; 
+		
+
+		thead {
+		
+			tr{
+
+				border-color: inherit;	
+
+				th{
+		
+					border: 1px solid #ededed; 
+
+					a{ 
+						color: #555;
+					}
+				}
+
+			}
+
+			
+
+		}
+		
+		tbody {
+			
+
+			tr {
+				
+				th{
+					
+					border: 1px solid #ededed; 
+					color: var(--heading-dark);
+				}
+				td{
+					
+					border: 1px solid #ededed; 
+					color: var(--text-dark);
+					a{
+						color: var(--heading-dark);
+						border-bottom: 1px solid var(--primary);
+						&:hover{
+							color: var(--primary);
+						}
+
+					}
+				}
+			}
+		}
+
+	}
+}
+
+
+
+
+
+
+
