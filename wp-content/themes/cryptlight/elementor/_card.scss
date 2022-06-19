@@ -1,0 +1,248 @@
+.ova-card {
+    border-radius: 20px;
+    padding: 33px;
+    &:hover {
+        background-color: #140E3A;
+        transition: all 0.3s ease;
+    }
+    .align-icon {
+        display: inline-block;
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            &:hover {
+                transition: all .3s ease;
+            }
+            i {
+                font-size: 80px;
+                color: white;
+                vertical-align: middle;
+            }
+        }    
+    }
+    
+   
+    .title {   
+        font-style: normal;
+        font-size: 24px;
+        font-weight: 600; 
+        line-height: 36px;
+        color: white;
+        margin-bottom: 30px;
+    }
+    .desc {
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #D3D4E0;
+
+  }
+}
+
+// Version 2
+.ova-card-v2 {
+    .card-container-v2 {
+        display: inline-block;
+
+        .card-content-v2 {
+            display: flex;
+
+            &.ova-card-mobile {
+                display: none;
+            }
+
+            @media screen and (max-width: 767px) {
+                &.ova-card-desktop {
+                    display: none;
+                }
+
+                &.ova-card-mobile {
+                    display: flex;
+                }
+            }
+
+            .ova-card-icon-box {
+
+                &.icon-left {
+                    margin-right: 24px;
+                }
+
+                &.icon-right {
+                    margin-left: 24px;
+                }
+
+                .icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 44px;
+                    min-width: 44px;
+                    height: 44px;
+                    background: linear-gradient(180deg, #5E8BFF 0%, #9541FF 100%);
+                    border-radius: 50%;
+                    -webkit-transition: all .3s ease;
+                    -moz-transition: all .3s ease;
+                    -o-transition: all .3s ease;
+                    transition: all .3s ease;
+
+                    i {
+                        color: #FFFFFF;
+                        font-size: 24px;
+                        -webkit-transition: all .3s ease;
+                        -moz-transition: all .3s ease;
+                        -o-transition: all .3s ease;
+                        transition: all .3s ease;
+                    }
+                }
+            }
+
+            .ova-card-content {
+                .title {
+                    margin: 0;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 30px;
+                    color: var(--heading);
+                }
+
+                .description {
+                    margin: 0;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: var(--text);
+                }
+            }
+        }
+    }
+}
+
+// Version 3
+.ova-card-v3 {
+    .card-content-v3 {
+        .icon-box-v3 {
+            display: inline-block;
+
+            .icon {
+                display: flex;
+                width: 44px;
+                height: 44px;
+                min-width: 44px;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(180deg, #5270FC 0%, #3859F2 100%);
+                border-radius: 50%;
+                -webkit-transition: all .3s ease;
+                -moz-transition: all .3s ease;
+                -o-transition: all .3s ease;
+                transition: all .3s ease;
+
+                i {
+                    font-size: 24px;
+                    color: #FFFFFF;
+                    -webkit-transition: all .3s ease;
+                    -moz-transition: all .3s ease;
+                    -o-transition: all .3s ease;
+                    transition: all .3s ease;
+                }
+            }
+        }
+
+        .title {
+            margin: 12px 0;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: var(--heading);
+        }
+
+        .description {
+            margin: 12px 0;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: var(--text);
+        }
+    }
+}
+
+// Version 4
+.ova-card-v4 {
+    text-align: center;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+
+    .icon-box-v4 {
+        display: inline-block;
+        border: 3px solid rgba(255, 255, 255, 0.2);
+        box-sizing: border-box;
+        border-radius: 50%;
+        padding: 12px;
+        margin-bottom: 30px;
+        background-color: transparent;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 68px;
+            height: 68px;
+            background: linear-gradient(180deg, #5E8BFF 0%, #9541FF 100%);
+            border-radius: 50%;
+
+            i {
+                font-size: 40px;
+                color: #FFFFFF;
+                -webkit-transition: all .3s ease;
+                -moz-transition: all .3s ease;
+                -o-transition: all .3s ease;
+                transition: all .3s ease;
+            }
+        }
+    }
+
+    .title {
+        margin: 0;
+        margin-bottom: 40px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
+        position: relative;
+
+        &:before {
+            position: absolute;;
+            content: "";
+            width: 137px;
+            height: 0;
+            bottom: -20px;
+            left: 50%;
+            margin-left: -68.5px;
+            border-bottom: 1px solid #DFAFF5;
+        }
+    }
+
+    .description {
+        margin: 0;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #C5B5D6;
+    }
+
+    &:hover {
+        .icon-box-v4 {
+            border-color: #9541FF;
+        }
+    }
+}

@@ -1,0 +1,103 @@
+.ova-sale-token{
+
+    padding: 30px;
+    border-radius: 10px;
+    height: auto;
+
+    &:hover {
+        transition: all 0.3s ease;
+    }
+    .date{
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 500; 
+        line-height: 24px;
+        color: #283445;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #DCDCE7;
+        padding-bottom: 3px;
+    }
+
+    .bonus{
+        font-style: normal;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        color: #283445;
+    
+    }
+
+    .price{
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #6D747C;
+
+    }
+   
+}
+
+.ova-sale-token-v2 {
+    background-color: #473273;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid rgba(149, 65, 255, 0.2);
+
+    .date {
+        padding: 12px;
+        background-color: #382463;
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -o-transition: all .3s ease;
+
+        h2 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 22px;
+            color: #EFF0FC;
+            transition: all .3s ease;
+            -webkit-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            -o-transition: all .3s ease;
+        }
+    }
+
+    .content {
+        padding: 12px;
+
+        .bonus {
+            margin: 0;
+            margin-bottom: 15px;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            color: #FFFFFF;
+            transition: all .3s ease;
+            -webkit-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            -o-transition: all .3s ease;
+        }
+
+        .price {
+            margin: 0;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #C5B5D6;
+            transition: all .3s ease;
+            -webkit-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            -o-transition: all .3s ease;
+        }
+    }
+
+    &:hover {
+        .date {
+            background-color: #9545FA;
+        }
+    }
+}

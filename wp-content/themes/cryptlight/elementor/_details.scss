@@ -1,0 +1,228 @@
+.ova-details {
+    padding: 10px 20px;
+    border-radius: 20px;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+
+    &.linear-gradient-active {
+        background: linear-gradient(90deg, rgba(105, 238, 191, 0.8) 0%, rgba(92, 255, 196, 0) 100%);
+        border-radius: 8px;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+    }
+
+    &.ova-linear-gradient {
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 5px;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(180deg, #3DEEA4 0%, #6EDDE8 74.48%, #79D9F8 100%);
+            border-radius: 8px;
+        }
+
+        &:hover {
+            &:before {
+                width: 100%;
+                background: linear-gradient(90deg, rgba(105, 238, 191, 0.8) 0%, rgba(92, 255, 196, 0) 100%);
+                border-radius: 8px;
+                -webkit-transition: all .3s linear;
+                -moz-transition: all .3s linear;
+                -o-transition: all .3s linear;
+                transition: all .3s linear;
+            }
+        }
+    }
+
+    .title {   
+        font-style: normal;
+        font-size: 24px;
+        font-weight: 600; 
+        line-height: 1;
+        color: #000300;
+        margin-bottom: 15px;
+        -moz-transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+        position: relative;
+        z-index: 3;
+        @media( max-width: 767px ){
+            line-height: 1.2em;
+        }
+        
+    }
+
+    .desc {
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1;
+        color: #000;
+        -moz-transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+        position: relative;
+        z-index: 3;
+    } 
+}
+
+.ova-details-v2 {
+    .details-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 20px;
+        background-color: #1B1E32;
+        box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+        transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -o-transition: all .3s ease;
+
+        @media screen and (max-width: 500px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .title {
+            margin: 0;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            color: #FFFFFF;
+            transition: all .3s ease;
+            -webkit-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            -o-transition: all .3s ease;
+        }
+
+        .description {
+            margin: 0;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #9399BC;
+            transition: all .3s ease;
+            -webkit-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            -o-transition: all .3s ease;
+        }
+
+        &:hover {
+            background-color: #272C44;
+            border-radius: 4px;
+            box-shadow: none;
+
+            .title, .description {
+                color: #6CE1F5;
+            }
+        }
+    }
+}
+
+.ova-details-v3 {
+    display: inline-block;
+
+    .details-wrapper {
+        display: grid;
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+
+        &.column2 {
+            grid-template-columns: 1fr 1fr;
+
+            @media screen and (max-width:500px) {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &.column3 {
+            grid-template-columns: 1fr 1fr 1fr;
+
+            @media screen and (max-width:768px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media screen and (max-width:500px) {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &.column4 {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            @media screen and (max-width:900px) {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            @media screen and (max-width:768px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media screen and (max-width:500px) {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &.column5 {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+            @media screen and (max-width:1024px) {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+
+            @media screen and (max-width:900px) {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            @media screen and (max-width:768px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media screen and (max-width:500px) {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .item {
+            position: relative;
+            padding-left: 24px;
+            text-align: left;
+
+            &:before {
+                position: absolute;
+                content: "";
+                width: 8px;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: var(--primary);
+                border-radius: 7px;
+            }
+
+            .title {
+                margin: 0;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                color: var(--heading);
+            }
+
+            .description {
+                margin: 0;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                color: var(--text);
+            }
+        }
+    }
+}

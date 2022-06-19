@@ -1,0 +1,111 @@
+.site_dark{
+
+	/*List Comment*/
+	#comments{
+
+		/*Fist Level*/
+		.comment-lists{
+
+			/*Item*/
+			.pingback,
+			.comment{
+				
+				.comment-body{
+
+					.comment-meta{
+							
+						cite{
+							
+							color: #fff;
+							
+							a{
+								
+								color: #fff;	
+								
+							}
+							
+						}
+						
+						.comment-date{
+							time{
+							    color: #999;
+							  
+							}
+						}
+					
+					}
+
+					.comment-content{
+					
+					    border-color: #555;
+
+					    .reply{
+					    	a{
+					    		color: var(--primary);
+
+					    		&.comment-reply-link{
+					    			
+								    color: var(--primary);
+								  
+					    			&:before{
+					    				position: absolute;
+					    				
+					    				margin-top: -7px;
+					    				
+					    			}
+					    			&:hover{
+					    				color: #fff;
+					    			}
+					    		}
+					    		&.comment-edit-link{
+					    			
+								    color: var(--primary);
+								   
+					    			&:hover{
+					    				color: #fff;
+					    				
+					    				
+					    			}
+					    			
+					    		}
+					    	}
+					    	
+					    }
+					}
+
+					#respond{
+						border: 1px solid #555;
+					}
+					
+				}
+				
+			}
+			
+		}
+
+	}
+
+	/*Comment Form*/
+	#respond{
+	
+		#reply-title{
+			
+			#cancel-comment-reply-link{
+				
+				color: red;
+			}
+		}
+		
+
+	}
+}
+
+.layout_1c{
+	#commentform .comment-form-cookies-consent{
+		justify-content: center;
+	}
+	#commentform p.logged-in-as{
+		text-align: center;
+		width: 100%;
+	}
+}

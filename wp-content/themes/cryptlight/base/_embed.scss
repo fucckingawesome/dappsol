@@ -1,0 +1,13 @@
+embed,
+iframe,
+object,
+video {
+	max-width: 100%;
+}
+
+p > embed,
+p > iframe,
+p > object,
+p > video {
+	margin-bottom: 0;
+}

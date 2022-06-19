@@ -1,0 +1,42 @@
+.site_dark{
+
+	.wrap_breadcrumbs{
+		background-color: #353535;
+		margin-bottom: 60px;
+		
+		
+	}
+
+	ul.breadcrumb{
+		margin: 0;
+		padding: 20px 0px;
+		display: inline-block;
+		list-style-type: none;
+		li{
+			color: var(--primary);
+			-webkit-hyphens: auto;
+		    -moz-hyphens: auto;
+		    -ms-hyphens: auto;
+		    hyphens: auto;
+		    display: inline-block;
+		    padding-right: 5px;
+			a{
+				color: var(--text-dark);
+
+				&:hover{
+					color: var(--primary);
+				}
+			}
+			.separator{
+				i{
+					font-size: 0.6em;
+					color: var(--heading-dark);
+					opacity: 0.5;
+					position: relative;
+					
+				}
+				
+			}
+		}
+	}
+}

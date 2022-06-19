@@ -1,0 +1,40 @@
+.ova-button {
+	.url-button {
+		width: auto;
+		display: inline-flex;
+		align-content: center;
+		background-color: var(--primary);
+		border-radius: 28px;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		text-align: center;
+		color: #fff;
+		padding: 10px 20px;
+		-webkit-transition: all .3s ease;
+    	-o-transition: all .3s ease;
+    	transition: all .3s ease;
+
+    	&:hover {
+    		background-color: #fff;
+    		color: var(--primary);
+    	}
+
+    	i {
+    		font-size: 22px;
+    		vertical-align: middle;
+    		border: 1px solid #91A4FF;
+    		border-radius: 50%;
+
+    		&.before {
+    			margin-right: 5px;
+    		}
+    		&.after {
+    			margin-left: 5px;
+    		}
+    	}
+	}
+	a {
+		text-decoration: none;
+	}
+}

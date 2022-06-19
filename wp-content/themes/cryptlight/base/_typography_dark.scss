@@ -1,0 +1,57 @@
+.site_dark{
+	
+	background-color: #050023;
+	font-size: var(--font-size);
+    line-height: var(--line-height);
+    color: var(--text-dark);
+    font-family: var(--primary-font);
+    letter-spacing: var(--letter-spacing);
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6{
+	    color: var(--heading-dark);
+
+	}
+
+	.elementor-text-editor p{
+	   
+	    color: var(--text-dark);
+	}
+	a{
+		color: var(--primary);
+	}
+
+	button, 
+	input, 
+	select, 
+	textarea{
+	    color: var(--text-dark);  
+	    
+	}
+
+	blockquote {
+	  
+	    color: var(--heading-dark);
+	  
+	     &:before{
+	        
+	        color: var(--primary);
+	     }
+	}
+
+	pre{
+	    border: 1px solid #d1d1d1;
+	}
+
+	hr {
+	    background-color: #ccc;
+	}
+
+}
+.search-no-results .container_site{
+	margin-bottom: 90px;
+}

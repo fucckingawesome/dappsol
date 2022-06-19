@@ -1,0 +1,91 @@
+.ova-card-image {
+
+    display: grid;
+    grid-gap: 10px;
+    
+    &.column1 {
+        grid-template-columns: 1fr;
+    }
+
+    &.column2 {
+        grid-template-columns: 1fr 1fr;
+
+        @media screen and (max-width: 546px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &.column3 {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media screen and (max-width: 546px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .card-image-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 20px;
+        -moz-transition: all .3s ease;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease;
+
+        .card-image {
+            background-color: #fff;
+            border: 1px solid #DCDCE7;
+            box-sizing: border-box;
+            border-radius: 20px;
+            width: 100px;
+            min-width: 100px;
+            height: auto;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            margin-bottom: 22px;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        .title {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            color: #283445;
+            margin-bottom: 10px;
+            -moz-transition: all .3s ease;
+            -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+        }
+
+        .desc {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: var(--text);
+            -moz-transition: all .3s ease;
+            -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+        }
+
+        &:hover {
+            background-color: #48DCA8;
+
+            .title, .desc {
+                color: #fff;
+            }
+        }
+    }
+}
