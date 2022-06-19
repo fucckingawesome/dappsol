@@ -1,0 +1,1279 @@
+// Subcribe Home 1
+.subcribe-home1 {
+	.ova-mc4wp {
+		display: flex;
+
+		.ova-mc4wp-name {
+			display: none;
+		}
+
+		.ova-mc4wp-email {
+			width: 70%;
+			margin-right: 20px;
+
+			input[type="email"] {
+				background-color: #292A47;
+				border-radius: 28px;
+				color: rgba(224, 224, 224, 0.8);
+				font-size: 16px;
+				line-height: 24px;
+				text-align: left;
+				padding: 16px 20px;
+				width: 100%;
+				height: auto;
+				border: none;
+			}
+		}
+
+		.ova-mc4wp-submit {
+			width: 30%;
+
+			input[type="submit"] {
+				background-color: var(--primary);
+				border-radius: 28px;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 24px;
+				text-align: center;
+				padding: 16px 20px;
+				color: #FFFFFF;
+				width: 100%;
+				height: auto;
+				-webkit-transition: all .3s linear;
+				-moz-transition: all .3s linear;
+				-o-transition: all .3s linear;
+				transition: all .3s linear;
+
+				&:hover {
+					background-color: #fff;
+					color: var(--text);
+					border-color: var(--text);
+				}
+			}
+		}
+
+		@media screen and (max-width: 465px) {
+			flex-direction: column;
+
+			.ova-mc4wp-email {
+				width: 100%;
+				margin: 0;
+				margin-bottom: 20px;
+			}
+			.ova-mc4wp-submit {
+				width: 100%;
+			}
+		}
+	}
+}
+
+// Subcribe Home 2
+.subcribe-home2 {
+	.ova-mc4wp {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		flex-wrap: nowrap;
+
+		@media screen and (max-width: 1024px) {
+			justify-content: flex-start;
+		}
+
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+		    align-items: flex-start;
+		}
+
+		.ova-mc4wp-name, .ova-mc4wp-email {
+			margin-right: 30px;
+			width: 300px;
+			@media screen and (max-width: 768px) {
+				margin-right: 0px;
+				margin-bottom: 30px;
+				width: 100%;
+			}
+			input {
+				max-height: 48px;
+				width: 100%;
+				background-color: #fff;
+				border: 1px solid #DCDCE7;
+				box-sizing: border-box;
+				border-radius: 8px;
+				color: #000;
+
+				@media screen and (max-width: 768px) {
+					max-width: 100%;
+					width: 100%;
+				}
+
+				&::placeholder {
+					font-size: 16px;
+					line-height: 24px;
+					color: var(--text);
+				}
+			}
+		}
+
+		.ova-mc4wp-submit {
+			width: 158px;
+			@media screen and (max-width: 768px) {
+				width: 100%;
+			}
+
+			input[type="submit"] {
+				max-height: 48px;
+				width: 100%;
+				padding: 12px 40.5px;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 24px;
+				text-align: center;
+				color: #fff;
+				background-color: #48DCA8;
+				border: none;
+				box-shadow: 0px 15px 30px rgba(72, 220, 168, 0.25);
+				border-radius: 8px;
+				-webkit-transition: all .3s linear;
+				-moz-transition: all .3s linear;
+				-o-transition: all .3s linear;
+				transition: all .3s linear;
+
+				@media screen and (max-width: 768px) {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+// Subcribe Home 4
+.subcribe-home4 {
+	.ova-mc4wp {
+		display: flex;
+
+		.ova-mc4wp-name {
+			display: none;
+		}
+
+		.ova-mc4wp-email {
+			width: 70%;
+			margin-right: 20px;
+
+			input[type="email"] {
+				background-color: #382463;
+				border-radius: 8px;
+				color: #C5B5D6;
+				font-size: 16px;
+				line-height: 24px;
+				text-align: left;
+				padding: 16px 20px;
+				width: 100%;
+				height: auto;
+				border: none;
+
+				&::placeholder {
+					color: #C5B5D6;
+				}
+			}
+		}
+
+		.ova-mc4wp-submit {
+			width: 30%;
+
+			input[type="submit"] {
+				background: linear-gradient(95.51deg, #26BAED -6.54%, #4F94FB 15.87%, #DB26F9 106.69%);
+				box-shadow: 0px 20px 40px rgba(232, 112, 242, 0.1);
+				border: none;
+				border-radius: 6px;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 24px;
+				text-align: center;
+				text-transform: uppercase;
+				padding: 16px 20px;
+				color: #FFFFFF;
+				width: auto;
+				height: auto;
+				-webkit-transition: all .3s linear;
+				-moz-transition: all .3s linear;
+				-o-transition: all .3s linear;
+				transition: all .3s linear;
+
+				&:hover {
+					background: linear-gradient(95.51deg, #DB26F9 15.87%, #4F94FB 106.69%);
+					color: #FFFFFF;
+				}
+			}
+		}
+
+		@media screen and (max-width: 465px) {
+			flex-direction: column;
+
+			.ova-mc4wp-email {
+				width: 100%;
+				margin: 0;
+				margin-bottom: 20px;
+			}
+			.ova-mc4wp-submit {
+				width: 100%;
+
+				input[type="submit"] {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+// Subcribe Home 5
+.subcribe-home5 {
+	.ova-mc4wp {
+		display: flex;
+
+		.ova-mc4wp-name {
+			display: none;
+		}
+
+		.ova-mc4wp-email {
+			width: 70%;
+			margin-right: 20px;
+
+			input[type="email"] {
+				background-color: #FFFFFF;
+				border-radius: 16px;
+				color: #8B8B8B;
+				font-size: 16px;
+				line-height: 24px;
+				text-align: left;
+				padding: 16px 20px;
+				width: 100%;
+				height: auto;
+				border: none;
+
+				&::placeholder {
+					color: #8B8B8B;
+				}
+			}
+		}
+
+		.ova-mc4wp-submit {
+			width: 30%;
+
+			input[type="submit"] {
+				background-color: #54CAEF;
+				box-shadow: 0px 20px 40px rgba(232, 112, 242, 0.1);
+				border: none;
+				border-radius: 16px;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 24px;
+				text-align: center;
+				text-transform: uppercase;
+				padding: 16px 28px;
+				color: #FFFFFF;
+				width: auto;
+				height: auto;
+				-webkit-transition: all .3s linear;
+				-moz-transition: all .3s linear;
+				-o-transition: all .3s linear;
+				transition: all .3s linear;
+
+				&:hover {
+					background-color: #5674FF;
+					color: #FFFFFF;
+				}
+			}
+		}
+
+		@media screen and (max-width: 465px) {
+			flex-direction: column;
+
+			.ova-mc4wp-email {
+				width: 100%;
+				margin: 0;
+				margin-bottom: 20px;
+			}
+			.ova-mc4wp-submit {
+				width: 100%;
+
+				input[type="submit"] {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+// Subcribe Home 6
+.subcribe-home6 {
+	.ova-mc4wp {
+		display: flex;
+
+		.ova-mc4wp-name {
+			display: none;
+		}
+
+		.ova-mc4wp-email {
+			width: 70%;
+			margin-right: 20px;
+
+			input[type="email"] {
+				background-color: #FFFFFF;
+				border-radius: 10px;
+				color: #8B8B8B;
+				font-size: 16px;
+				line-height: 24px;
+				text-align: left;
+				padding: 16px 20px;
+				width: 100%;
+				height: auto;
+				border: none;
+
+				&::placeholder {
+					color: #8B8B8B;
+				}
+			}
+		}
+
+		.ova-mc4wp-submit {
+			width: 30%;
+
+			input[type="submit"] {
+				background-color: #1D5FEF;
+				box-shadow: 0px 20px 40px rgba(232, 112, 242, 0.1);
+				border: none;
+				border-radius: 10px;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 24px;
+				text-align: center;
+				text-transform: uppercase;
+				padding: 16px 28px;
+				color: #FFFFFF;
+				width: auto;
+				height: auto;
+				-webkit-transition: all .3s linear;
+				-moz-transition: all .3s linear;
+				-o-transition: all .3s linear;
+				transition: all .3s linear;
+
+				&:hover {
+					background-color: #3D4465;
+					color: #FFFFFF;
+				}
+			}
+		}
+
+		@media screen and (max-width: 465px) {
+			flex-direction: column;
+
+			.ova-mc4wp-email {
+				width: 100%;
+				margin: 0;
+				margin-bottom: 20px;
+			}
+			.ova-mc4wp-submit {
+				width: 100%;
+
+				input[type="submit"] {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+
+// Contact Form 7
+.ova-ctfrom7 {
+	// Home 1
+	.form-home1 {
+
+		input[type="text"], input[type="email"], input[type="tel"], textarea {
+			width: 386px;
+			background-color: #292A47;
+			box-sizing: border-box;
+			border: none;
+			border-radius: 24px;
+			padding: 12px 16px;
+			color: #fff;
+			outline: none;
+			caret-color: var(--primary);
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+			color: #fff;
+			text-transform: capitalize;
+
+			@media screen and (max-width: 830px) {
+				width: 300px;
+			}
+
+			&::placeholder {
+				font-size: 16px;
+				line-height: 24px;
+				color: rgba(224, 224, 224, 0.8);
+			}
+		}
+		.name-info, .email-phone-info, .message-info {
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+
+			@media screen and (max-width: 675px) {
+				flex-direction: column;
+				.wpcf7-form-control-wrap {
+					width: 100%;
+					input {
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		.name-info, .email-phone-info {
+			margin-bottom: 30px;
+			.wpcf7-form-control-wrap {
+				&:first-child {
+					input {
+						margin-right: 15px;
+
+						@media screen and (max-width: 675px) {
+							margin-right: 0;
+						}
+					}
+				}
+				&:last-child {
+					input {
+						margin-left: 15px;
+
+						@media screen and (max-width: 675px) {
+							margin-left: 0;
+						}
+					}
+				}
+			}
+		}
+
+		.email-phone-info {
+			input[type="email"], input[type="tel"] {
+				text-transform: unset;
+			}
+		}
+
+		.message-info {
+			textarea {
+				width: 802px;
+				height: 120px;
+				max-width: 100%;
+				margin-bottom: 60px;
+
+				@media screen and (max-width: 830px) {
+					width: 630px;
+				}
+			}
+		}
+
+		.ova-submit {
+			text-align: center;
+
+			input[type="submit"] {
+				padding: 16px 36.6px;
+				background-color: var(--primary);
+				border-radius: 28px;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 24px;
+				text-align: center;
+				text-transform: uppercase;
+				color: #fff;
+				-moz-transition: all .3s ease;
+				-webkit-transition: all .3s ease;
+				transition: all .3s ease;
+
+				&:hover {
+					background-color: #48DCA8;
+					border-color: #48DCA8;
+				}
+			}
+
+			.ajax-loader {
+				display: none;
+			}
+		}
+	}
+
+	// Home 2
+	.form-home2 {
+
+		input[type="text"], input[type="email"], input[type="tel"] {
+			width: 100%;
+			background-color: #fff;
+			border: 1px solid #DCDCE7;
+			box-sizing: border-box;
+			border-radius: 8px;
+			padding: 12px 11px;
+			color: #000;
+			outline: none;
+			caret-color: #48DCA8;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+			text-transform: capitalize;
+			-moz-transition: all .3s ease;
+			-webkit-transition: all .3s ease;
+			transition: all .3s ease;
+
+			&::placeholder {
+				font-size: 16px;
+				line-height: 24px;
+				color: var(--text);
+			}
+		}
+		.name-info, .email-phone-info, .message-info {
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+
+			@media screen and (max-width: 768px) {
+				flex-direction: column;
+				.wpcf7-form-control-wrap {
+					width: 100%;
+					input, textarea {
+						max-width: 100%;
+					}
+				}
+			}
+		}
+
+		.name-info, .email-phone-info {
+			margin-bottom: 16px;
+			.wpcf7-form-control-wrap {
+				width: 100%;
+				display: flex;
+				flex-wrap: nowrap;
+				flex-direction: column;
+				&:first-child {
+					margin-right: 15px;
+					@media screen and (max-width: 768px) {
+						margin-right: 0;
+					}
+				}
+				&:last-child {
+					margin-left: 15px;
+
+					@media screen and (max-width: 768px) {
+						margin-left: 0;
+					}
+				}
+			}
+		}
+
+		.email-phone-info {
+			input[type="email"], input[type="tel"] {
+				text-transform: unset;
+			}
+		}
+
+		.message-info {
+			.wpcf7-form-control-wrap {
+    			width: 100%;
+
+				textarea {
+					width: 100%;
+					height: 96px;
+					max-width: 100%;
+					margin-bottom: 24px;
+					background-color: #fff;
+					border: 1px solid #DCDCE7;
+					box-sizing: border-box;
+					border-radius: 8px;
+					padding: 12px 11px;
+					outline: none;
+					caret-color: #48DCA8;
+					font-weight: 500;
+					font-size: 16px;
+					line-height: 24px;
+					color: #000;
+					text-transform: capitalize;
+					-moz-transition: all .3s ease;
+					-webkit-transition: all .3s ease;
+					transition: all .3s ease;
+
+					&::placeholder {
+						color: #6D747C;
+					}
+				}
+			}
+		}
+
+		.ova-submit {
+			text-align: center;
+
+			input[type="submit"] {
+				padding: 14px 75px 15px 73px;
+				background-color: #48DCA8;
+				border-color: #48DCA8;
+				box-shadow: 0px 15px 30px rgba(72, 220, 168, 0.25);
+				border-radius: 8px;
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 27px;
+				text-align: center;
+				text-transform: uppercase;
+				color: #fff;
+				-moz-transition: all .3s ease;
+				-webkit-transition: all .3s ease;
+				transition: all .3s ease;
+
+				&:hover {
+					background-color: var(--primary);
+					border-color: var(--primary);
+				}
+
+				@media screen and (max-width: 450px) {
+					width: 100%;
+					padding: 14px 0 15px 0;
+					font-size: 16px;
+				}
+			}
+
+			.ajax-loader {
+				display: none;
+			}
+		}
+	}
+
+	// Home 3
+	.form-home3 {
+
+		input[type="text"], input[type="email"], input[type="tel"] {
+			width: 100%;
+			background-color: #33343B;
+			border: 1px solid rgba(255, 255, 255, 0.25);
+			box-sizing: border-box;
+			border-radius: 8px;
+			padding: 12px 11px;
+			color: #fff;
+			outline: none;
+			caret-color: #48DCA8;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+			text-transform: capitalize;
+			-moz-transition: all .3s ease;
+			-webkit-transition: all .3s ease;
+			transition: all .3s ease;
+
+			&::placeholder {
+				font-size: 16px;
+				line-height: 24px;
+				color: #D3D4E0;
+			}
+		}
+		.name-info, .email-phone-info, .message-info {
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+
+			@media screen and (max-width: 768px) {
+				flex-direction: column;
+				.wpcf7-form-control-wrap {
+					width: 100%;
+					input, textarea {
+						max-width: 100%;
+					}
+				}
+			}
+		}
+
+		.name-info, .email-phone-info {
+			margin-bottom: 16px;
+			.wpcf7-form-control-wrap {
+				width: 100%;
+				display: flex;
+				flex-wrap: nowrap;
+				flex-direction: column;
+
+				&:first-child {
+					margin-right: 15px;
+					@media screen and (max-width: 768px) {
+						margin-right: 0;
+					}
+				}
+
+				&:last-child {
+					margin-left: 15px;
+
+					@media screen and (max-width: 768px) {
+						margin-left: 0;
+					}
+				}
+			}
+		}
+
+		.email-phone-info {
+			input[type="email"], input[type="tel"] {
+				text-transform: unset;
+			}
+		}
+
+		.message-info {
+			.wpcf7-form-control-wrap {
+				// max-width: 802px;
+    			width: 100%;
+
+				textarea {
+					width: 100%;
+					height: 96px;
+					max-width: 100%;
+					margin-bottom: 24px;
+					background-color: #33343B;
+					border: 1px solid rgba(255, 255, 255, 0.25);
+					box-sizing: border-box;
+					border-radius: 8px;
+					padding: 12px 11px;
+					color: #fff;
+					outline: none;
+					caret-color: #48DCA8;
+					font-weight: 500;
+					font-size: 16px;
+					line-height: 24px;
+					text-transform: capitalize;
+					-moz-transition: all .3s ease;
+					-webkit-transition: all .3s ease;
+					transition: all .3s ease;
+
+					&::placeholder {
+						color: #D3D4E0;
+					}
+				}
+			}
+		}
+
+		.ova-submit {
+			text-align: center;
+
+			input[type="submit"] {
+				padding: 14px 75px 15px 73px;
+				background-color: #48DCA8;
+				border-color: #48DCA8;
+				box-shadow: 0px 15px 30px rgba(72, 220, 168, 0.25);
+				border-radius: 8px;
+				font-weight: 600;
+				font-size: 18px;
+				line-height: 27px;
+				text-align: center;
+				text-transform: uppercase;
+				color: #fff;
+				-moz-transition: all .3s ease;
+				-webkit-transition: all .3s ease;
+				transition: all .3s ease;
+
+				&:hover {
+					background-color: var(--primary);
+					border-color: var(--primary);
+				}
+
+				@media screen and (max-width: 450px) {
+					width: 100%;
+					padding: 14px 0 15px 0;
+					font-size: 16px;
+				}
+			}
+
+			.ajax-loader {
+				display: none;
+			}
+		}
+	}
+
+	// Home subcribe home 3
+	.form-subcribe-home3 {
+
+		.content-info {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			flex-wrap: nowrap;
+
+			@media screen and (max-width: 1024px) {
+				justify-content: flex-start;
+			}
+
+			@media screen and (max-width: 768px) {
+				flex-direction: column;
+			    align-items: flex-start;
+			}
+
+			.wpcf7-form-control-wrap {
+				margin-right: 30px;
+				@media screen and (max-width: 768px) {
+					margin-right: 0px;
+				}
+				input {
+					max-width: 300px;
+					max-height: 48px;
+					width: 100%;
+					background-color: #33343B;
+					border: 1px solid rgba(255, 255, 255, 0.25);
+					box-sizing: border-box;
+					border-radius: 8px;
+					color: #fff;
+
+					@media screen and (max-width: 768px) {
+						max-width: 100%;
+						width: 100%;
+					}
+
+					&::placeholder {
+						font-size: 16px;
+						line-height: 24px;
+						color: #D3D4E0;
+					}
+				}
+			}
+
+			input[type="submit"] {
+				max-width: 158px;
+				max-height: 48px;
+				padding: 12px 40.5px;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 24px;
+				text-align: center;
+				text-transform: uppercase;
+				color: #fff;
+				background-color: #48DCA8;
+				border: none;
+				box-shadow: 0px 15px 30px rgba(72, 220, 168, 0.25);
+				border-radius: 8px;
+				-webkit-transition: all .3s linear;
+				-moz-transition: all .3s linear;
+				-o-transition: all .3s linear;
+				transition: all .3s linear;
+
+				@media screen and (max-width: 768px) {
+					max-width: 100%;
+				}
+			}
+
+			.ajax-loader {
+				display: none;
+			}
+		}
+	}
+
+	// Home 4
+	.form-home4 {
+		background-color: #FFFFFF;
+		padding: 56px;
+		border: 1px solid #F4F4F4;
+		box-sizing: border-box;
+		box-shadow: 0px 60px 120px rgba(0, 0, 0, 0.05);
+		border-radius: 10px;
+
+		@media screen and (max-width: 768px) {
+			padding: 30px;
+		}
+
+		input[type="text"], input[type="email"], input[type="tel"] {
+			width: 100%;
+			background-color: #FFFFFF;
+			border: 1px solid #EAE9E9;
+			box-sizing: border-box;
+			border-radius: 6px;
+			padding: 12px;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+			color: #000000;
+			-webkit-transition: all .3s ease;
+			-moz-transition: all .3s ease;
+			-o-transition: all .3s ease;
+			transition: all .3s ease;
+
+			&::placeholder {
+				font-size: 16px;
+				line-height: 24px;
+				color: #8D869B;
+				font-weight: 400;
+			}
+
+			&:focus {
+				border-color: #9545FA;
+				caret-color: #9545FA;
+			}
+		}
+
+		.name-info, .email-phone-info {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 30px;
+
+			.wpcf7-form-control-wrap {
+				width: 100%;
+			}
+
+			@media screen and (max-width: 768px) {
+				flex-direction: column;
+			}
+		}
+
+		.name-info {
+			.wpcf7-form-control-wrap {
+				&.first-name {
+					margin-right: 15px;
+				}
+
+				&.last-name {
+					margin-left: 15px;
+				}
+
+				@media screen and (max-width: 768px) {
+					&.first-name, &.last-name {
+						margin: 0;
+					}
+				}
+			}
+		}
+
+		.email-phone-info {
+			.wpcf7-form-control-wrap {
+				&.your-email {
+					margin-right: 15px;
+				}
+
+				&.phone {
+					margin-left: 15px;
+				}
+
+				@media screen and (max-width: 768px) {
+					&.your-email, &.phone {
+						margin: 0;
+					}
+				}
+			}
+		}
+
+		.message-info {
+			margin-bottom: 40px;
+
+			.message {
+				textarea[name="message"] {
+					height: 84px;
+					background-color: #FFFFFF;
+					border: 1px solid #EAE9E9;
+					box-sizing: border-box;
+					border-radius: 6px;
+					padding: 12px;
+					font-weight: 500;
+					font-size: 16px;
+					line-height: 24px;
+					color: #000000;
+					-webkit-transition: all .3s ease;
+					-moz-transition: all .3s ease;
+					-o-transition: all .3s ease;
+					transition: all .3s ease;
+
+					&::placeholder {
+						font-size: 16px;
+						line-height: 24px;
+						color: #8D869B;
+						font-weight: 400;
+					}
+
+					&:focus {
+						border-color: #9545FA;
+						caret-color: #9545FA;
+					}
+				}
+			}
+		}
+
+		.ova-submit {
+			position: relative;
+
+			input[type="submit"] {
+				width: 100%;
+				padding: 12px 14px;
+				background: linear-gradient(95.51deg, #26BAED -6.54%, #4F94FB 15.87%, #DB26F9 106.69%);
+				border: none;
+				border-radius: 6px;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 24px;
+				color: #FFFFFF;
+				text-align: center;
+				-webkit-transition: all .3s ease;
+				-moz-transition: all .3s ease;
+				-o-transition: all .3s ease;
+				transition: all .3s ease;
+
+				&:hover {
+					background: linear-gradient(95.51deg, #26BAED -6.54%, #DB26F9 15.87%, #4F94FB 106.69%);
+				}
+			}
+
+			.ajax-loader {
+				position: absolute;
+			    bottom: -40px;
+			    left: 0;
+			    margin: 0;
+			}
+		}
+	}
+
+	// Home 5
+	.form-home5 {
+		background-color: #FFFFFF;
+		border-radius: 24px;
+		padding: 40px;
+
+		@media screen and (max-width: 400px) {
+			padding: 20px;
+		}
+
+		label {
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 21px;
+			color: #000000;
+		}
+
+		input[type="text"], input[type="email"] {
+			width: 100%;
+			margin-top: 4px;
+			margin-bottom: 15px;
+			background-color: #FFFFFF;
+			border: 1px solid #E2E3E4;
+			box-sizing: border-box;
+			border-radius: 12px;
+			padding: 16px;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+			color: #000000;
+
+			&::placeholder {
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 24px;
+				color: #BBC3CC;
+			}
+
+			&:focus {
+				border-color: var(--primary);
+				caret-color: var(--primary);
+			}
+		}
+
+		.message-info {
+			textarea {
+				width: 100%;
+				height: 137px;
+				padding: 16px;
+				background-color: #F6FAFF;
+				border-radius: 12px;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 24px;
+				color: #000000;
+				border: none;
+
+				&::placeholder {
+					font-weight: 500;
+					font-size: 16px;
+					line-height: 24px;
+					color: #BBC3CC;
+				}
+
+				&:focus {
+					caret-color: var(--primary);
+				}
+			}
+		}
+
+		.ova-submit {
+			text-align: right;;
+
+			input[type="submit"] {
+				margin-top: 40px;
+				padding: 20px 24px;
+				background: #5674FF;
+				box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.05);
+				border-radius: 14px;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 24px;
+				color: #FFFFFF;
+				border: none;
+				-webkit-transition: all .3s ease;
+				-moz-transition: all .3s ease;
+				-o-transition: all .3s ease;
+				transition: all .3s ease;
+
+				&:hover {
+					background-color: #54CAEF;
+					color: #FFFFFF;
+				}
+			}
+
+			.ajax-loader {
+				float: left;
+				margin-right: 0;
+				margin-top: 40px;
+			}
+		}
+	}
+
+	// Home 6
+	.form-home6 {
+		background-color: #333854;
+		border-radius: 14px;
+		padding: 40px;
+
+		@media screen and (max-width: 400px) {
+			padding: 20px;
+		}
+
+		label {
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 21px;
+			color: #FFFFFF;
+		}
+
+		input[type="text"], input[type="email"] {
+			width: 100%;
+			margin-top: 4px;
+			margin-bottom: 15px;
+			background-color: #272C44;
+			border: 1px solid #272C44;
+			box-sizing: border-box;
+			border-radius: 14px;
+			padding: 16px;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+			color: #FFFFFF;
+
+			&::placeholder {
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 24px;
+				color: #9399BC;
+			}
+
+			&:focus {
+				border-color: #6CE1F5;
+				caret-color: #9399BC;
+			}
+		}
+
+		.message-info {
+			textarea {
+				width: 100%;
+				height: 137px;
+				padding: 16px;
+				background-color: #272C44;
+				border-radius: 12px;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 24px;
+				color: #FFFFFF;
+				border: none;
+
+				&::placeholder {
+					font-weight: 500;
+					font-size: 16px;
+					line-height: 24px;
+					color: #9399BC;
+				}
+
+				&:focus {
+					caret-color: #9399BC;
+				}
+			}
+		}
+
+		.ova-submit {
+			text-align: right;;
+
+			input[type="submit"] {
+				margin-top: 40px;
+				padding: 20px 44px;
+				background: #1D5FEF;
+				box-shadow: 0px 16px 32px rgba(44, 204, 255, 0.15);
+				border-radius: 8px;
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 24px;
+				color: #FFFFFF;
+				border: none;
+				-webkit-transition: all .3s ease;
+				-moz-transition: all .3s ease;
+				-o-transition: all .3s ease;
+				transition: all .3s ease;
+
+				&:hover {
+					background-color: #272C44;
+					color: #FFFFFF;
+				}
+			}
+
+			.ajax-loader {
+				float: left;
+				margin-right: 0;
+				margin-top: 40px;
+			}
+		}
+	}
+}
+
+// Tabs arrow
+.tabs-arrow {
+	.elementor-tabs {
+		.elementor-tabs-content-wrapper {
+			.elementor-tab-mobile-title {
+				position: relative;
+
+				&:before {
+					position: absolute;
+					right: 0;
+					font-size: 20px;
+					content: "\f104";
+					font-family: ovaicon !important;
+				    font-style: normal;
+				    font-weight: normal !important;
+				    font-variant: normal;
+				    text-transform: none;
+				    line-height: 1;
+				    -webkit-font-smoothing: antialiased;
+				}
+			}
+		}
+	}
+}
+
+// CSS Log
+.ova-ctfrom7-home1, .ova-ctfrom7-home2, .ova-ctfrom7-home3, .ova-ctfrom7-home4, .ova-ctfrom7-home5, .ova-ctfrom7-home6 {
+	.wpcf7 {
+		form.invalid, form.unaccepted {
+			.wpcf7-response-output {
+				color: #dc3232;
+				border: 1px solid #dc3232;
+			}
+		}
+	}
+}
+
+.ova-ctfrom7-home4, .ova-ctfrom7-home5, .ova-ctfrom7-home6 {
+	.wpcf7 {
+		form.invalid, form.unaccepted {
+			.wpcf7-response-output {
+				background-color: #FFFFFF;
+			}
+		}
+	}
+}

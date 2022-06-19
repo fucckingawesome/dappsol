@@ -1,0 +1,471 @@
+.sidebar .widget {
+    display: block;
+    margin-bottom: 45px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid #eee;
+    float: left;
+    width: 100%;
+
+    &:last-child{
+    	border-bottom: none;
+    }
+
+    a{
+		color: var(--text);
+		&:hover{
+			color: var(--primary);
+		}
+	}
+
+
+
+    h4.widget-title{
+	    
+	    color: var(--heading);
+	    padding-bottom: 15px;
+	    margin-bottom: 15px;
+	    margin-top: 0;
+	    position: relative;
+
+	}
+
+	p{
+		margin-top: 0;
+	}
+
+	
+	img{ width: auto; }
+
+	
+	ul{
+	    list-style-type: none;
+	    margin: 0;
+	    padding-left: 0px;
+
+	    li{
+	    	padding: 0.5em 0;
+
+	    	&:first-child{
+	    		border-top: 0;
+	    	}
+	    	&:last-child{
+	    		padding-bottom: 0;
+	    	}
+	    }
+
+	    &.children,
+		&.sub-menu {
+			margin: 0.5em 0 0 0.8em;
+		}
+
+	}
+
+	.screen-reader-text{ 
+		display: none; 
+	}
+
+
+	/* Widget Rss */
+	&.widget_rss{
+		
+		ul li{
+			padding-top: 25px;
+		    padding-bottom: 25px;
+		    border-bottom: 1px solid #eee;
+		    &:first-child{
+		    	padding-top: 0;
+		    }
+		    &:last-child{
+			    border-bottom: none;
+			    margin-bottom: 0;
+			    padding-bottom: 0;
+			}
+			a.rsswidget{
+			    font-weight: 600;
+			    display: block;
+			    line-height: 1.5em;
+			    margin-bottom: 12px;
+			    color: var(--heading);
+			    font-size: 15px;
+			    &:hover{
+			    	color: var(--primary);
+			    }
+			}
+			.rss-date{
+			    display: inline-block;
+			    margin-bottom: 12px;
+			    font-weight: 500;
+			    opacity: 0.7;
+			}
+			.rssSummary{
+			    margin-bottom: 12px;
+			    color: var(--text);
+			}
+			cite{
+				color: var(--light);	
+				text-decoration: underline;
+			}
+
+		}
+	}
+
+	/* Widget Calendar */
+	&.widget_calendar{
+		width: 100%;
+
+		caption{ 
+			background: transparent;
+			color: var(--heading);
+			font-weight: bold; 
+			text-align: center; 
+			border: none;
+			padding: 5px 0px;
+		}
+
+		table{
+			margin-bottom: 0;
+			thead{
+				border: 1px solid #eee;
+				tr{
+					th{
+						background-color: #f1f1f1;
+						color: var(--heading); 
+						border: 1px solid #e4e4e4;
+						text-align: center;	
+					}
+				}	
+			}
+			tbody{
+				tr{
+					td{
+						border: none; 
+						text-align: center;
+						border: 1px solid #e4e4e4; 
+					}
+				}
+			}
+			
+		}
+		
+
+		nav{
+			border: none;
+			padding: 10px 0px 0px 0px;
+			display: flex;
+			justify-content: space-between;
+			a{
+				color: var( --primary );
+				&:hover{
+					color: #343434;
+				}
+			}
+			
+		}
+	}
+
+
+	/* Widget Tag clound */
+	&.widget_tag_cloud{
+	 	.tagcloud{ 
+	 		position: relative;
+	 		width: 100%;
+	 		float: left;
+	 		a{
+	 			float: left;
+		 		margin: 0 10px 10px 0;
+		 		display: block;
+		 		padding: 5px 10px;
+		 		background-color: transparent;
+		 		border: solid 1px;
+		 		border-color: var(--light);
+		 		border-radius: $border-radius-small;
+		 		font-size: 0.9em!important;
+		 		@include transaction( all, 0.3s, linear );
+		 		&:hover{
+		 			color: #fff;
+		 			background-color: var(--primary);
+		 			border-color: var(--primary);
+		 		}	
+	 		}
+	 		
+	 	}
+
+	}
+
+
+	/* Widget Search */
+	&.widget_search{
+		form{
+			position: relative;
+			&:before{
+				font-size: 18px;
+				color: var(--light);
+				font-family: "ovaicon";
+				content: "\f14f";
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				display: inline-block;
+				font-style: normal;
+				font-variant: normal;
+				font-weight: normal;
+				line-height: 1;
+				vertical-align: middle;
+				position: absolute;
+				top: 50%;
+				right: 20px;
+				line-height: 1;
+				transform: translate(0, -50%);
+				cursor: pointer;
+			}
+			input[type="search"]{
+				width: 100%;
+				padding-right: 50px;
+				padding-left: 20px;
+			}
+			input[type="submit"]{
+				position: absolute;
+				right: 0px;
+				top: 0;
+				background-color: transparent;
+				border: none;
+				font-size: 0;
+				width: 50px;
+			}	
+		}
+		
+	}
+	
+
+	
+	/**
+	 * Archives
+	 */
+
+	&.widget_categories,
+	&.widget_archive{
+		ul{
+			li{
+				line-height: 30px;
+				color: var(--light);
+				&:before{
+					content: "\f161";
+					font-family: "ovaicon";
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					display: inline-block;
+					font-style: normal;
+					font-variant: normal;
+					font-weight: normal;
+					vertical-align: middle;
+					margin-right: 0.6180469716em;
+					display: block;
+					float: left;
+					color: var(--text);
+					opacity: 0.5;
+					width: 1em;
+					font-size: 0.9em;
+					line-height: inherit;
+				}
+				a{
+					color: var(--text);
+					position: relative;
+					&:hover{
+						color: var(--primary);
+					}
+					&:after{
+						position: absolute;
+						clear: both;
+						content: "";
+					}
+				}
+			}
+		}
+		.widget-custom{
+			ul{
+				li{
+					line-height: 30px;
+					&:before{
+						content: "\f161";
+						font-family: "ovaicon";
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+						display: inline-block;
+						font-style: normal;
+						font-variant: normal;
+						font-weight: normal;
+						vertical-align: middle;
+						margin-right: 0.6180469716em;
+						display: block;
+						float: left;
+						opacity: 0.5;
+						width: 1em;
+						font-size: 0.9em;
+					}
+					a{
+						display: flex;
+						justify-content: space-between;
+
+						.number{
+							background: #eee;
+							border-radius: 50%;
+							width: 30px;
+							height: 30px;
+							text-align: center;
+							line-height: 30px;
+						}
+					}
+				}
+			}	
+		}
+		
+	}
+
+	&.widget_categories{
+		ul{
+			li{
+				&:before{
+					content: "\f162";
+					font-family: "ovaicon";
+				}
+			}
+		}
+		.widget-custom{
+			ul{
+				li{
+					line-height: 30px;
+					&:before{
+						content: "\f162";
+						font-family: "ovaicon";
+					}
+				}
+			}
+		}
+	}
+	
+
+
+	&.widget_pages{
+		ul{
+			li{
+				&:before{
+					content: "\f163";
+					font-family: "ovaicon";
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					display: inline-block;
+					font-style: normal;
+					font-variant: normal;
+					font-weight: normal;
+					vertical-align: middle;
+					margin-right: 0.6180469716em;
+					display: block;
+					float: left;
+					opacity: 0.5;
+					width: 1em;
+					font-size: 0.9em;
+					line-height: inherit;
+				}
+			}
+		}
+	}
+
+	&.widget_nav_menu{
+		ul{
+			li{
+				&:before{
+					content: "\f163";
+					font-family: "ovaicon";
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					display: inline-block;
+					font-style: normal;
+					font-variant: normal;
+					font-weight: normal;
+					vertical-align: middle;
+					margin-right: 0.6180469716em;
+					display: block;
+					float: left;
+					opacity: 0.5;
+					width: 1em;
+					font-size: 0.9em;
+					line-height: inherit;
+				}
+			}
+		}
+	}
+
+	&.widget_meta{
+		ul{
+			li{
+				&:before{
+					content: "\f112";
+					font-family: "ovaicon";
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					display: inline-block;
+					font-style: normal;
+					font-variant: normal;
+					font-weight: normal;
+					vertical-align: middle;
+					margin-right: 0.6180469716em;
+					display: block;
+					float: left;
+					opacity: 0.5;
+					width: 1em;
+					font-size: 0.9em;
+					line-height: inherit;
+				}
+			}
+		}
+	}
+	
+
+	&.widget_recent_comments{
+		ul{
+			li{
+				color: var(--light);
+				&:before{
+					content: "\f151";
+					font-family: "ovaicon";
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					display: inline-block;
+					font-style: normal;
+					font-variant: normal;
+					font-weight: normal;
+					vertical-align: middle;
+					margin-right: 0.6180469716em;
+					display: block;
+					float: left;
+					opacity: 0.5;
+					width: 1em;
+					font-size: 0.9em;
+					line-height: inherit;
+				}
+				
+				.comment-author-link{
+					
+						color: var( --heading );
+						text-decoration: underline;
+						a{
+							&:hover{
+								color: var(--primary);
+							}	
+						}
+						
+					
+				}
+				
+
+
+			}
+		}
+	}
+	
+	
+
+}
+
+
+
+

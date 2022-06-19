@@ -1,0 +1,14 @@
+.wrap_header{
+   
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 70px;
+
+    @media( min-width: $desktop ){
+    	display: flex;
+	    justify-content: space-between;
+	    align-content: center;
+	    align-items: center;
+    }
+    
+}

@@ -1,0 +1,17 @@
+.ova-menu-footer {
+	.menu {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		a {
+			text-decoration: none;
+			-webkit-transition: all .3s ease;
+			-o-transition: all .3s ease;
+			transition: all .3s ease;
+		}
+
+		.sub-menu {
+			list-style: none;
+		}
+	}
+}

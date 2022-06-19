@@ -1,0 +1,28 @@
+.ova-image-gallery {
+    display: inline-grid;
+    grid-gap: 17px;
+    
+    &.column-1 {
+    	grid-template-columns: 1fr;
+    }
+    &.column-2 {
+    	grid-template-columns: 1fr 1fr;
+    }
+    &.column-3 {
+    	grid-template-columns: 1fr 1fr 1fr;
+    }
+    &.column-4 {
+    	grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    &.column-5 {
+    	grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .gallery-item {
+    	display: inline-flex;
+    	a {
+    		display: inline-flex;
+    		text-decoration: none;
+    	}
+    }
+}

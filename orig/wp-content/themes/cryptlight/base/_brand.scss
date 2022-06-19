@@ -1,0 +1,17 @@
+.site-brand{
+	a{
+		.blogname{
+			font-weight: bold;
+			font-size: 2em;
+			line-height: 1.5em;
+			color: var(--primary);
+		}
+	}
+	@media( max-width: $desktop - 1 ){
+		display: block;
+		float: left;
+		max-width: calc(100% - 120px);
+		z-index: 1;
+    	position: relative;
+	}
+}

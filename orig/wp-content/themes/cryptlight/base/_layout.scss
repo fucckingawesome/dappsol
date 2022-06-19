@@ -1,0 +1,102 @@
+body{
+		background-color: #fff;
+
+		// When use Boxed Layout
+		&.container_boxed{
+			.wrap-fullwidth{
+				max-width: var(--container-width);
+	            margin: 0 auto;
+	            background-color: #fff;
+	        }
+	        .row_site{
+	            padding: var(--boxed-offset);
+	        }
+		}
+
+		.row_site{
+			margin: 0 auto;
+		}
+
+		.container_site{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.row_site,
+		.elementor-section.elementor-section-boxed>.elementor-container{
+
+		    max-width: var(--container-width);
+
+			@media( max-width: $desktop - 1 ){
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+
+		}
+
+		&.page-template-default{
+			.elementor-section.elementor-section-boxed>.elementor-container{
+				
+				padding-left: 0px;
+				padding-right: 0px;
+				
+			}
+		}
+
+		&.layout_1c{
+			#main-content{
+				max-width: 80%;
+			    width: 80%;
+			    margin: 0 auto;
+			    text-align: center;
+			    @media( max-width: $desktop - 1 ){
+			    	width: 100%;
+			    	max-width: 100%;
+			    }
+
+			}
+		}
+
+		&.layout_2l{
+			#main-content{
+				float: right;
+			}
+			#sidebar{
+				float: left;
+			}
+		}
+		
+		&.layout_2r{
+			#main-content{
+				float: left;
+			}
+			#sidebar{
+				float: right;
+			}
+		}
+
+		
+
+		#main-content{
+            max-width: calc( var(--main-content) - 30px );
+            width: 100%;
+            margin-bottom: 60px;
+            @media( max-width: $desktop - 1 ){
+            	max-width: 100%;
+            }
+        }
+		#sidebar{
+	        max-width: var(--width-sidebar);
+	        width: 100%;
+	        @media( max-width: $desktop - 1 ){
+            	max-width: 100%;
+            }
+	    }
+
+	    .wrap_footer{
+	    	clear: both;
+	    }
+	
+}
+
+

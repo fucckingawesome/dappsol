@@ -1,0 +1,162 @@
+.ova-progress {
+	width: 100%;
+	position: relative;
+
+	.ctyl-progress-title {
+		margin: 0;
+		margin-bottom: 5px;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		color: var(--text);
+	}
+
+	.ova-percent-view {
+		height: 13px;
+		width: 100%;
+		background-color: #201F3A;
+		border-radius: 8px;
+		overflow: visible;
+		position: relative;
+		margin: 0 auto;
+
+		.ova-percent {
+			height: 100%;
+			float: left;
+			border-radius: 8px;
+			background: -moz-linear-gradient(270deg, #63A3FF 0%, #011B3F 100%);
+			background: -webkit-linear-gradient(270deg, #63A3FF 0%, #011B3F 100%);
+			background: linear-gradient(270deg, #63A3FF 0%, #011B3F 100%);
+		}
+
+		.percentage {
+			position: absolute;
+			color: #fff;
+			top: -30px;
+			display: none;
+			font-size: 16px;
+			line-height: 24px;
+			color: var(--text);
+		}
+
+		.ova-notes {
+			display: flex;
+			margin-top: 30px;
+			width: 100%;
+			position: absolute;
+			top: 0;
+
+			.item-note {
+				position: relative;
+				margin-left: 10%;
+				.note-text {
+					font-size: 14px;
+					line-height: 21px;
+					color: var(--text);
+				}
+				&:first-child {
+					margin-left: 0;
+				}
+
+				&:last-child {
+					margin-left: 19%;
+				}
+
+				&:before {
+			        content: "";
+				    width: 1px;
+				    height: 35px;
+				    position: absolute;
+				    top: -30px;
+				    left: 50%;
+				    border-left: 1px solid #414073;
+				}
+			}
+		}
+	}
+}
+
+// Progress version 2
+.ova-progress-v2 {
+	.ova-progress-container {
+		.progress-title {
+			display: flex;
+    		justify-content: space-between;
+    		margin-bottom: 12px;
+
+    		.progress-title-left, .progress-title-right {
+    			.text {
+    				font-size: 16px;
+					line-height: 24px;
+					color: var(--text);
+    			}
+    			.sub-text {
+    				font-weight: 600;
+					font-size: 16px;
+					line-height: 24px;
+					color: var(--text);
+    			}
+    		}
+		}
+
+		.ova-pervent-view-v2 {
+			width: 100%;
+			height: 10px;
+			background-color: #492E82;
+			border-radius: 4px;
+			overflow: visible;
+			position: relative;
+
+			.ova-percent-v2 {
+				width: 0;
+				height: 100%;
+    			border-radius: 4px;
+    			background: linear-gradient(95.51deg, #26BAED -6.54%, #4F94FB 15.87%, #DB26F9 106.69%);
+    			position: relative;
+			}
+
+			.percent-point {
+				position: absolute;
+				top: 0;
+				height: 100%;
+				.point {
+					display: none;
+					position: absolute;
+					width: 14px;
+					height: 14px;
+					border: 2px solid #FFFFFF;
+					border-radius: 50%;
+					top: -2px;
+					z-index: 1;
+				}
+			}
+
+			.ova-notes-v2 {
+				display: flex;
+				margin-top: 20px;
+
+				.item-note-v2 {
+					position: relative;
+					margin-left: 15%;
+
+					&:before {
+						content: "";
+					    width: 1px;
+					    height: 39px;
+					    position: absolute;
+					    top: -33px;
+					    left: 50%;
+					    border-left: 1px solid rgba(255, 255, 255, 0.6);
+					}
+
+					.note-text-v2 {
+						font-size: 14px;
+						line-height: 21px;
+						text-align: center;
+						color: var(--text);
+					}
+				}
+			}
+		}
+	}
+}
